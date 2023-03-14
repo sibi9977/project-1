@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,800;1,200;1,300;1,500;1,900&family=Rampart+One&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap');
+  *{
+     font-family: 'Poppins', sans-serif;
+ 
+  }
+ @font-face {
+    font-family: "TheLastCall";
+    src: url("../fonts/TheLastCall-Regular.otf") format("opentype");
+ }
+  body{
+    background-color: #ebf5e2;
+
+  }
+  .hero-heading {
+    font-family: "TheLastCall" !important;
+    letter-spacing: 2px;
+    font-size: 50px;
+} 
+.header-page{
+    background-color: #000027 !important;
+    color: #ebf5e2;
+}
+.head-demo{
+    background-color: #000027 !important;
+    color: #ebf5e2;
+
+}
+.hero-paro {
+    margin-top: 30px;
+    padding-bottom: 28px;
+
+}
+  #hero-left {  
+    text-align: center;
+    padding-top: 12%;
+}
+.nav-link{
+    color: #ebf5e2;
+    padding: 10px 15px;
+}
+ 
+  .banner{
+    padding-top: 60px;
+  }
+  .hero-btn-1 {
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000027;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-right: 5px;
+    transition: transform .6s;
+    font-weight: 500;
+    font-size: 20px;
+    
+}
+.hero-btn-2 {
+    border: 1px solid #000027;
+    cursor: pointer;
+    color: #000027;
+    background-color: transparent;
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    transition: transform .6s;
+    font-weight: 500;
+    font-size: 20px;
+}
+ 
+.hero-img {
+    /* height: 500px; */
+    width: 780px;
+}
+ 
+  .hero-btn-2:hover, .hero-btn-1:hover{
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+  }
+  .desk-view{
+    display: none;
+  }
+  .colum-img {
+    max-width: 650px;
+    height: auto;
+    padding-top: 28%;
+}
+.top-head {
+    font-weight: 700;
+    padding-top: 41%;
+}
+.hero-btn-3 {
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000027;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-right: 5px;
+    transition: transform .6s;
+    font-weight: 500;
+    font-size: 20px;
+    
+}
+.sec1-btn-1 {
+    background-color: #000027;
+    color: #fff;
+    border: none;
+    padding: 20px 85px;
+    border-radius: 5px;
+    font-weight: 414;
+    font-size: 24px;
+    margin-bottom: 30PX;
+}
+.sec1-btn-2{
+    background-color: #fff;
+    color: #b7b7b7;
+    border: none;
+    padding: 20px 73px;
+    border-radius: 5px;
+    font-weight: 414;
+    font-size: 24px;
+
+}
+.section-2 {
+    /* height: 300px; */
+    background-color: #000027;
+    margin-top: 68px;
+    padding: 58px 0px;
+}
+  .market {
+    font-size: 63px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    opacity: 1;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    writing-mode: lr-tb;
+    position: relative;
+    top: 60%;
+}  
+.content-1 h2{
+    color: #fff;
+}
+.content-1 p{
+    color: #fff;
+}
+
+.sec2-colm
+{
+    padding-inline: 77px;
+}
+.sec3-col{
+    padding-inline: 77px;
+}
+.sec4-col{
+    padding-top: 150px;
+}
+.sec4-col h2{
+    font-size: 28px;
+    font-weight: 500;
+}
+.sec4-col p{
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 40px;
+}
+.sec4-img img{
+   max-width: 100%;
+   height: auto;
+   padding-top: 100px;
+}
+.sec-5{
+    background-color: #fafafa;
+    padding-top: 30px;
+}
+.sec-head {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.sec-5 img{
+    padding: 20px 50px;
+    transition: transform .6s;
+}
+.sec-5 img:hover{
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+
+}
+.section-6{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 80px;
+
+}
+.card-1{
+    background-color: #000027;
+    width: 100%;
+}
+.card-1 h3{
+    color: #fff;
+    font-size: 22px;
+}
+.card-title h2 {
+    color: black;
+    border: 1px solid #fafafa;
+    width: 286px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 3%;
+    background-color: aliceblue;
+}
+.card-title h2 span{
+    color: black;
+    font-size: 12px;
+}
+ 
+  @media (max-width:540px){
+    .moblie-view{
+        display: none;
+    }
+    .desk-view{
+        display: unset ;
+      }
+      .hero-img {
+        height: 262px;
+        width: 371px;
+        margin-top: 21%;
+
+    }
+  }
+  
+
+  
