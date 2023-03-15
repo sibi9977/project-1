@@ -13,67 +13,69 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://kit.fontawesome.com/b8f7d9d833.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-
-    <nav class="moblie-view">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col head-demo d-flex justify-content-center">
-                    <h1 class="text-center ">DEMO</h1>
+    <nav class="fixed-top">
+        <nav class="moblie-view">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col head-demo d-flex justify-content-center">
+                        <h1 class="text-center ">DEMO</h1>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <nav class="navbar header-page navbar-expand-lg bg-body-tertiary">
+        </nav>
+        <nav class="navbar header-page navbar-expand-lg bg-body-tertiary">
 
 
 
-        <div class="container-fluid ">
-            <div class="row desk-view">
-                <div class="col d-flex justify-content-center">
-                    <h1 class="text-center">DEMO</h1>
+            <div class="container-fluid ">
+                <div class="row desk-view">
+                    <div class="col d-flex justify-content-center">
+                        <h1 class="text-center">DEMO</h1>
+
+                    </div>
 
                 </div>
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trading Instrument</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Platforms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Accounut</a>
+                        </li>
 
+                        <li class="nav-item">
+                            <a class="nav-link">Partnership</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Company</a>
+                        </li>
+                    </ul>
+                    <!-- <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+                </div>
             </div>
-            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Trading Instrument</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Platforms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Accounut</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link">Partnership</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Company</a>
-                    </li>
-                </ul>
-                <!-- <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
-            </div>
-        </div>
+        </nav>
     </nav>
-    <div class="container">
+    <div class="container hero-cont">
         <div class="banner">
             <div class="row">
                 <div class="col-md-6 col-sm-12 text-center" id="hero-left">
@@ -100,18 +102,18 @@
         <div class="row ">
             <div class="col-md-5 col-sm-12">
                 <h2 class="top-head">Open Your Account<br> Today!</h2>
-                <p>You can open Account with us and start trading</p>
+                <p class="top-p">You can open Account with us and start trading</p>
                 <!-- <div class="container text-center justify-content-center d-flex">
                         <button class="sec1-btn-1 btn " type="button">LIVE ACCOUNT</button>
                 </div> -->
                 <div class="row">
-                    <div class="col-12">
-                        <button class="sec1-btn-1">LIVE ACCOUNT</button>
+                    <div class="col-md-12 col-sm-12 colbtn">
+                        <button class="sec1-btn-1" onclick="showImage ();">LIVE ACCOUNT</button>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12">
-                        <button class="sec1-btn-2">DEMO ACCOUNT</button>
+                    <div class="col-md-12 col-sm-12 colbtn">
+                        <button class="sec1-btn-2" onclick="showImage1();">DEMO ACCOUNT</button>
                     </div>
                 </div>
 
@@ -119,17 +121,18 @@
 
             </div>
             <div class="col-md-7 col-sm-12">
-                <img class="colum-img" src="./assets/image/live.png" alt="">
+                <img class="colum-img" id="liveimg" src="./assets/image/live.png" alt="">
+                <img class="colum-img2" id="demoimg" src="./assets/image/demo-account-2.png" alt="">
             </div>
         </div>
     </div>
     <div class="section-2">
         <div>
             <div class="row content-1">
-                <div class="col-md-1">
+                <div class="col-md-1 col-sm-1">
                     <h3 class="market">MARKETS</h3>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-12 des">
                     <h2> Benefits You Receive</h2>
                     <p>We highly believe in offering a good environment of trading to our clients where they could trade
                         with confidence as we provide them with extremely competitive products and services. Our goal is
@@ -137,22 +140,62 @@
                         this way we create a long lasting relationship with our clients.</p>
 
                 </div>
-                <div class="col-md-4 sec2-colm">
-                    <h2> <i class="fab fa-fort-awesome-alt"></i>&nbsp; Quality</h2>
-                    <p>Our prime focus is to provide the best of the services to our clients and we really work on
-                        improving and expanding our services more for the betterment of our clients.</p>
-                    <h2><i class="fab fa-digital-ocean"></i> Transparency</h2>
-                    <p>We offer a transparent atmosphere where our clients get the clear picture of each and everything.
-                        We completely comply with all the legal requirements.</p>
+                <div class="col-md-4 col-sm-12 sec2-colm">
+                    <div class="font">
+                        <i class="fab fa-fort-awesome-alt foot-ico"></i>
+                    </div>
+                    <div class="rig">
+                        <h2> Quality</h2>
+                        <ul class="foot-ul">
+                            <li>
+                                <p>Our prime focus is to provide the best of the services to our clients and we really
+                                    work on
+                                    improving and expanding our services more for the betterment of our clients.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="font">
+                        <i class="fab fa-digital-ocean foot-ico"></i>
+                    </div>
+                    <div class="rig">
+                        <h2> Transparency</h2>
+                        <ul class="foot-ul">
+                            <li>
+                                <p>We offer a transparent atmosphere where our clients get the clear picture of each and
+                                    everything.
+                                    We completely comply with all the legal requirements.</p>
+                            </li>
+                        </ul>
+                    </div>
 
                 </div>
-                <div class="col-md-4 sec3-col">
-                    <h2><i class="fab fa-centercode"></i>&nbsp; Accessibility</h2>
-                    <p>If you are the one wishing to start trading with us, then you can easily access our services
-                        without any discomfort. We ensure you have a good journey with us.</p>
-                    <h2><i class="fab fa-megaport"></i>&nbsp; Funds Security</h2>
-                    <p>We assure you that all your funds are kept safe and are safeguarded properly with utter security.
-                        We do comply with all the financial regulations and obligations.</p>
+                <div class="col-md-4 col-sm-12 sec3-col">
+                    <div class="font">
+                        <i class="fab fa-centercode foot-ico"></i>
+                    </div>
+                    <div class="rig">
+                        <h2> Accessibility</h2>
+                        <ul class="foot-ul">
+                            <li>
+                                <p>We offer a transparent atmosphere where our clients get the clear picture of each and
+                                    everything.
+                                    We completely comply with all the legal requirements.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="font">
+                        <i class="fab fa-megaport foot-ico"></i>
+                    </div>
+                    <div class="rig">
+                        <h2>Funds Security</h2>
+                        <ul class="foot-ul">
+                            <li>
+                                <p>We assure you that all your funds are kept safe and are safeguarded properly with utter
+                                    security.
+                                    We do comply with all the financial regulations and obligations.</p>
+                            </li>
+                        </ul>
+                    </div>
 
                 </div>
             </div>
@@ -160,7 +203,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-6 sec4-col">
+            <div class="col-md-6 col-sm-12 sec4-col">
                 <h2><i class="fa-solid fa-layer-group"></i> &nbsp; Register Yourself</h2>
                 <p>The very first step is that you need to register an account with us. You can choose a demo, cent or
                     live account as per your convenience and can henceforth register yourself.</p>
@@ -173,65 +216,311 @@
 
             </div>
 
-            <div class="col-6 sec4-img">
+            <div class="col-md-6 col-sm-12 sec4-img">
+                <h3 class="sec4-h3">3 Simple Steps</h3>
                 <img src="./assets/image/steps.svg" alt="">
 
             </div>
         </div>
     </div>
     <div class="container-fluid sec-5">
+
         <h2 class="sec-head">Payment Methods</h2>
-        <img src="./assets/image/wepay.svg" alt="">
-        <img src="./assets/image/paypal.svg" alt="">
-        <img src="./assets/image/visa.png" alt="">
-        <img src="./assets/image/hsb.svg" alt="">
-        <img src="./assets/image/mastro.svg" alt="">
-        <img src="./assets/image/amazon.svg" alt="">
-        <img src="./assets/image/master.svg" alt="">
+        <div class="container payment-con">
+            <div class="row">
+                <div class="col-lg-2 col-4">
+                    <img src="./assets/image/wepay.svg" alt="">
+                </div>
+                <div class="col-lg-2 col-4">
+                    <img src="./assets/image/paypal.svg" alt="">
+                </div>
+                <div class="col-lg-2 col-4">
+                    <img src="./assets/image/hsb.svg" alt="">
+                </div>
+                <div class="col-lg-2 col-4">
+                    <img src="./assets/image/mastro.svg" alt="">
+                </div>
+                <div class="col-lg-2 col-4">
+                    <img src="./assets/image/amazon.svg" alt="">
+                </div>
+                <div class="col-lg-2 col-4">
+                    <img src="./assets/image/master.svg" alt="">
+                </div>
+
+
+
+            </div>
+        </div>
     </div>
     <div class="section-6">
-        <h3>Experience Unmatchable Trading With Us!</h3>
+        <h2 class="sec6-h3">Experience Unmatchable Trading With Us!</h2>
 
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-4">
+            <div class="col-md-4 col-sm-12">
                 <div class="card-1">
                     <h3><i class="fa-sharp fa-solid fa-gear"></i>&nbsp;BASIC</h3>
                     <div class="card-title">
-                        <h2>19,99$ <br>
-                           <span>/Month</span>  
+                        <h2> 19,99$ <br>
+                            <span>/Month</span>
                         </h2>
-                        
-                    </div>
-                    <div class="bottom-card1">
-                        <ul>
-                            <li>Minimum Deposit <span>300$</span></li>
-                            <li>Available Base Currencies <span>USD, EUR, GBP</span></li>
-                            <li>Spreads From<span>1.6 pips</span></li>
-                            <li>max leverage <span>300$</span></li>
 
-                        </ul>
                     </div>
-                    <button>start Now</button>
+                    <div class="bottom-card1 justify-content-center">
+                        <div class="row">
+                            <div class="col-lg-8 col-8">
+                                <ul class="bottom">
+                                    <li><i class="fa-sharp fa-solid fa-check"></i>Minimum Deposit</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i>Available Base Currencies</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i>Spreads From</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i>max leverage </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-4">
+                                <ul class="bottom2">
+                                    <li>300$</li>
+                                    <li>USD, EUR, GBP</li>
+                                    <li>1.6 pips</li>
+                                    <li>300$</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="line-bot text-center d-flex justify-content-center">
+                    </div>
+                    <div class="btn text-center d-flex justify-content-center">
+                        <button class="card-btn">start Now</button>
+                    </div>
 
 
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card-2">
-                    <h3>STANDARD</h3>
+            <div class="col-md-4">
+                <div class="card-1">
+                    <h3><i class="fa-sharp fa-solid fa-gauge-high"></i>&nbsp;STANDARD</h3>
+                    <div class="card-title">
+                        <h2> 25,99$<br>
+                            <span>/Month</span>
+                        </h2>
+
+                    </div>
+                    <div class="bottom-card1 justify-content-center">
+                        <div class="row">
+                            <div class="col-lg-8 col-8">
+                                <ul class="bottom">
+                                    <li><i class="fa-sharp fa-solid fa-check"></i>Minimum Deposit</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i>Available Base Currencies</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i>Spreads From</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i>max leverage </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-4">
+                                <ul class="bottom2">
+                                    <li>500$</li>
+                                    <li>USD, EUR, GBP</li>
+                                    <li>1.6 pips</li>
+                                    <li>300$</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="line-bot text-center d-flex justify-content-center">
+                    </div>
+                    <div class="btn text-center d-flex justify-content-center">
+                        <button class="card-btn">start Now</button>
+                    </div>
 
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card-3">
-                    <h3>PREMIUM</h3>
+            <div class="col-md-4">
+                <div class="card-1">
+                    <h3><i class="fa-sharp fa-solid fa-globe"></i>&nbsp;PREMIUM</h3>
+                    <div class="card-title">
+                        <h2> 30,99$<br>
+                            <span>/Month</span>
+                        </h2>
+
+                    </div>
+                    <div class="bottom-card1 justify-content-center">
+                        <div class="row">
+                            <div class="col-lg-8 col-8">
+                                <ul class="bottom">
+                                    <li><i class="fa-sharp fa-solid fa-check"></i>Minimum Deposit</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i>Available Base Currencies</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i>Spreads From</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i>max leverage </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-4">
+                                <ul class="bottom2">
+                                    <li>1000$</li>
+                                    <li>USD, EUR, GBP</li>
+                                    <li>1.6 pips</li>
+                                    <li>300$</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="line-bot text-center d-flex justify-content-center">
+                    </div>
+                    <div class="btn text-center d-flex justify-content-center">
+                        <button class="card-btn">start Now</button>
+                    </div>
+
 
                 </div>
             </div>
         </div>
     </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+                <h2 class="sec7-head">Testimonials<h2>
+                        <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="sec7-carousel">
+                                        <p class="sec7-p">The experience I had with them is unmatchable and they have
+                                            got the best hands on dealing with customers,<br> any query of mine has got
+                                            instant solution from them</p>
+                                        <img src="./assets/image/testi1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="sec7-p">The brokerage offers raw spread which is one of the reasons I have
+                                        been trading them since a while<br> now as my experience has been really good.
+                                    </p>
+                                    <img src="./assets/image/testi2 (1).png" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="sec7-p">It is one of the best brokerages I have worked with as they have
+                                        given me a chance to use multiple currency pairs<br> and also I got a chance to
+                                        trade on different products.</p>
+                                    <img src="./assets/image/testi3.png" alt="">
+
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="sec8-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12 fot">
+                    <h3 class="footer"><i class="fa-sharp fa-solid fa-location-dot"></i>Address</h3>
+                    <p class="footer-p">#121 Bishopsgate,
+                        London EC2M 3TL,
+                        UK
+                    </p>
+                    <h3 class="footer">Contact</h3>
+                    <div class="foot"><i class="fa-thin fa-message-lines"></i>
+                        <a href="#" class="foot">support@fnxmarkets.com</a>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-3 col-6">
+                    <h3 class="footer footer-line">Useful links</h3>
+                    <ul class="footer1">
+                        <li><a href="# " class="foot-links"><i class="fa-solid fa-chevron-right"></i>&nbsp;
+                                &nbsp;Home</a></li>
+                        <li><a href="# " class="foot-links"><i class="fa-solid fa-chevron-right"></i>&nbsp; &nbsp;
+                                Trading Instruments</a></li>
+                        <li><a href="# " class="foot-links"><i class="fa-solid fa-chevron-right"></i>&nbsp;
+                                &nbsp;Platforms</a></li>
+                        <li><a href="# " class="foot-links"><i class="fa-solid fa-chevron-right"></i>&nbsp;
+                                &nbsp;Accounut</a></li>
+                        <li><a href="# " class="foot-links"><i class="fa-solid fa-chevron-right"></i>&nbsp;
+                                &nbsp;Partnerships</a></li>
+                        <li><a href="# " class="foot-links"><i class="fa-solid fa-chevron-right"></i>&nbsp;
+                                &nbsp;Company</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-3 col-6">
+                    <h3 class="footer footer-line"><i class="fa-duotone fa-pipe"></i>&nbsp; &nbsp;Legal Info</h3>
+                    <ul class="footer2 ">
+                        <li><a href="#" class="foot-links"><i class="fa-solid fa-chevron-right"></i>&nbsp; &nbsp;Risk
+                                Warning</a></li>
+                        <li><a href="#" class="foot-links"><i class="fa-solid fa-chevron-right"></i>&nbsp; &nbsp;Privacy
+                                Policy</a></li>
+                        <li><a href="#" class="foot-links"><i class="fa-solid fa-chevron-right"></i>&nbsp; &nbsp;Client
+                                Agreement</a></li>
+                        <li><a href="#" class="foot-links"><i class="fa-solid fa-chevron-right"></i>&nbsp;
+                                &nbsp;Business Terms</a></li>
+                        <li><a href="#" class="foot-links"><i class="fa-solid fa-chevron-right"></i>&nbsp; &nbsp;Legal
+                                Information</a></li>
+                        <li><a href="#" class="foot-links"><i class="fa-solid fa-chevron-right"></i>&nbsp;
+                                &nbsp;Complaints Policy</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-3 col-12">
+                    <h3 class="footer footer-line"><i class="fa-solid fa-pipe"></i>&nbsp; &nbsp;SUBSCRIBE US</h3>
+                    <p class="footer-p">Sign Up for your demo account now:</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control int" placeholder="Enter your Email Address"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text paper-bg" id="basic-addon2"><a href="#"> <i
+                                    class="fa-solid fa-paper-plane btnplan"></i></a></span>
+                    </div>
+                </div>
+                <div class="footer-p">
+                    <p class="footer-p">Risk Disclosure:On margin trading Forex or CFDs carries a high-risk level and
+                        may not be
+                        acceptable as you may incur a complete loss of deposit. Leverage could also work against you.
+                        Don’t risk on capital which you can’t afford to lose. Be mindful of all the market and trade
+                        related threats and completely understand them. It is highly advisable that consult a finance
+                        advisor before taking any huge financial decision.</p>
+                    Demo is a brokerage firm and the contents presented on our website is entirely for the reference
+                    purpose. Please keep a note that we do not endorse any products and we highly comply with the rules
+                    and regulations as per the jurisdiction.
+
+                </div>
+                <div class="footer-link">
+                    <a href="#" class="footer-a">2021 Demo</a> |All Rights reserved
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"
+        integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous">
+        </script>
+
+    <script>
+        function showImage() {
+            (this)
+            document.getElementById('liveimg').style.display = 'inline-block';
+            document.getElementById('demoimg').style.display = 'none';
+            $('.sec1-btn-2').removeClass('demoactive');
+            $('.sec1-btn-1').removeClass('liveactive');
+        }
+        function showImage1() {
+            document.getElementById('demoimg').style.display = 'inline-block';
+            document.getElementById('liveimg').style.display = 'none';
+            $('.sec1-btn-2').addClass('demoactive');
+            $('.sec1-btn-1').addClass('liveactive');
+        }
+
+
+
+
+    </script>
+
+
 
 
 </body>
