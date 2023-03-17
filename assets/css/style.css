@@ -537,9 +537,224 @@ body {
     color: #fff;
     text-align: center;
 }
-.foot-links:hover{
+
+.foot-links:hover {
     opacity: 0.8 !important;
 }
+
+/* trading sec */
+.trade-sec1 {
+    background-image: url('../image/inner-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 32px 180px;
+    margin-top: 7%;
+}
+
+.trade-sec1 a {
+    text-decoration: none;
+    color: #fff;
+    padding-top: 60px;
+}
+
+.trade-p p {
+    padding: 25px 0px;
+}
+
+.trade-p h2 {
+    padding-top: 20px;
+}
+
+.widsec {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* platform */
+.mt4-sec img {
+    width: 80%;
+    padding-top: 4%;
+}
+
+.mt4-sec p {
+    padding-right: 8%;
+    padding-top: 14px;
+    font-size: 14.5px;
+}
+
+.mt4-sec h2 {
+    font-weight: 500;
+    font-size: 32px;
+    padding-top: 20px;
+}
+
+.mt5-sec img {
+    width: 310px;
+    padding-top: 20px;
+}
+
+.mt5-sec h2 {
+    font-weight: 500;
+    font-size: 32px;
+    padding-top: 10px;
+}
+
+.mt5-sec p {
+    padding-top: 14px;
+    font-size: 14.5px;
+}
+.plat-sec2 h2{
+    font-size: 22px;
+    color: #AAAAAA;
+    
+}
+.plat-sec2 h2:hover{
+    color: #3B3B3B;
+}
+ 
+.plat-h3 {
+    color: #151515;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 150px 1px 59px 22px;
+     
+    
+}
+.boxview1{
+    
+        box-shadow: 0 30px 20px #00000029;
+        border-radius: 2px 55px 2px 55px;
+        text-align: center;
+        padding: 95px 10px;
+        height: 300px;
+
+    
+}
+.boxview2{
+    box-shadow: 0 30px 20px #00000029;
+    border-radius: 2px 55px 2px 55px;
+    text-align: center;
+    padding: 95px 10px;
+    height: 300px;
+}
+.boxview3{
+    box-shadow: 0 30px 20px #00000029;
+    border-radius: 2px 55px 2px 55px;
+    text-align: center;
+    padding: 95px 10px;
+    height: 300px;
+}
+.boxview4{
+        box-shadow: 0 30px 20px #00000029;
+        border-radius: 2px 55px 2px 55px;
+        text-align: center;
+        padding: 95px 10px;
+        height: 300px;
+    }
+   .plat-secl li{
+    list-style-type: none;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 10px;
+     
+   }
+   .plat-sec3 h2 {
+    padding: 31% 0% 5%;
+    font-size: 38px;
+    font-weight: 600;
+}
+.plat-sec4 {
+    padding: 15% 3% 5%;
+}
+.plat-img{
+     margin: 50px 0px;
+}
+/* accounut section */
+.heading {
+    background-image: url("../image/standard1.png");
+    background-repeat: no-repeat;
+    height: 280px;
+    padding: 17px;
+    margin-top: 40px;    
+    color: #fff; 
+
+}
+ .card-section{   
+    border-radius: 17px;
+    background: #F9F8F7 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.36);
+    width: 90%;
+    
+    }
+
+.card-content {
+    color: #fff;
+    font-size: 22px;
+     
+
+}
+.card-p1{
+     text-align: right;
+     font-size: 19px;
+}
+.card-p2{
+    text-align: left;
+    font-size: 45px;
+    font-weight: 500;
+}
+.card-p3{
+    font-size: 14px;
+}
+.list1 ul{
+    list-style-type: none;
+    padding: 0 20px;
+    padding-bottom: 25px;
+}
+.text-left{
+    float: left;
+} 
+.text-right{
+    float: right;
+     
+}
+.line-li li{
+    border-bottom: 1px dashed;
+}
+.center-content h2 {
+    /* padding-left: 14px; */
+    font-size: 39px;
+    font-weight: 500;
+    padding-top: 13%;
+    /* padding-right: 3px; */
+    text-align: center;
+    padding-bottom: 20px;
+}
+.center-content p {
+    text-align: center;
+    font-size: 17.5px;
+    /* justify-content: center; */
+    padding: 41px;
+}
+.card-secbtn button {
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000027;
+    padding: 8px;
+    margin: 16px;
+    border-radius: 6px;
+}
+ 
+ 
+
+ 
+
+
+
 
 @media (max-width:540px) {
     .moblie-view {
@@ -668,11 +883,26 @@ body {
         top: -23%;
         left: 14%;
     }
+
     .foot-ico {
         margin-right: -25px;
     }
-    .foot-ul
-    {
+
+    .foot-ul {
         padding-left: 0px;
+    }
+    /* trading  */
+    .trade-p h2 {
+        font-size: 33px;
+        margin-right: 54px;
+        padding-top: 21px;
+    }
+    .trade-sec1 {
+        background-image: url('../image/inner-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+        padding: 18px 3px;
+        margin-top: 15%;
     }
 }
