@@ -617,8 +617,9 @@ body {
 }
 
 .mt5-sec img {
-    width: 310px;
+    width: 312px;
     padding-top: 20px;
+    margin-left: 150px;
 }
 
 .mt5-sec h2 {
@@ -685,6 +686,18 @@ body {
     padding: 95px 10px;
     height: 300px;
 }
+.boxview4:hover{
+    fill: #000000 !important;
+    color: #000000;
+
+}
+.heading h2{
+         margin-left: 19px;
+        font-size: 28px;
+        margin-bottom: 25px;
+        font-weight: 400;
+    
+}
 
 .plat-secl li {
     list-style-type: none;
@@ -692,6 +705,16 @@ body {
     font-size: 15px;
     font-weight: 400;
     padding-top: 10px;
+
+}
+.logo-wind{
+    margin: 40px;
+}
+.logo-wind1{
+    margin: 40px;
+}
+.icone path:hover{
+    fill: #000027;
 
 }
 
@@ -716,6 +739,7 @@ body {
     background-size: cover;
     height: 280px;
     /* padding: 49px; */
+    border-radius: 18px;
     margin-top: 41px;
     color: #fff;
 }
@@ -950,7 +974,7 @@ body {
     color: #000000;
     background-color: #ebf5e2;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
 
 
 
